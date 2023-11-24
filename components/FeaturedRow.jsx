@@ -2,6 +2,7 @@ import { View, Text, ScrollView } from "react-native";
 import React from "react";
 import { ArrowRightIcon } from "react-native-heroicons/outline";
 import RestaurantCard from "./RestaurantCards";
+import dishes from "../dummy data/dishes";
 const iconColor = "#00ccbb";
 const FeaturedRow = ({ title, description, id }) => {
   return (
@@ -27,7 +28,7 @@ const FeaturedRow = ({ title, description, id }) => {
           genre="North-Indian"
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
-          dishes={["Paneer Butter Masala", "Paneer Khurchan", "Chur Chur Naan"]}
+          dishes={dishes}
           long={20}
           lat={0}
         />
@@ -39,7 +40,7 @@ const FeaturedRow = ({ title, description, id }) => {
           genre="North-Indian"
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
-          dishes={["Paneer Butter Masala", "Paneer Khurchan", "Chur Chur Naan"]}
+          dishes={dishes}
           long={20}
           lat={0}
         />
@@ -51,7 +52,7 @@ const FeaturedRow = ({ title, description, id }) => {
           genre="North-Indian"
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
-          dishes={["Paneer Butter Masala", "Paneer Khurchan", "Chur Chur Naan"]}
+          dishes={dishes}
           long={20}
           lat={0}
         />
@@ -63,7 +64,7 @@ const FeaturedRow = ({ title, description, id }) => {
           genre="North-Indian"
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
-          dishes={["Paneer Butter Masala", "Paneer Khurchan", "Chur Chur Naan"]}
+          dishes={dishes}
           long={20}
           lat={0}
         />
@@ -75,7 +76,7 @@ const FeaturedRow = ({ title, description, id }) => {
           genre="North-Indian"
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
-          dishes={["Paneer Butter Masala", "Paneer Khurchan", "Chur Chur Naan"]}
+          dishes={dishes}
           long={20}
           lat={0}
         />
