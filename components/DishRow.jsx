@@ -12,7 +12,7 @@ const iconColor = "#00ccbb";
 
 function currentDishCountInCart(items, id) {
   let count = 0;
-  for (let i = 0; i < items.count; i++) {
+  for (let i = 0; i < items.length; i++) {
     if (items[i].id === id) {
       count++;
     }
@@ -33,8 +33,10 @@ const DishRow = ({ id, name, description, price, image }) => {
       dispatch(addToBasket({ id, name, description, price, image }));
       setCount(count + 1);
     } else if (intent === "remove-from-basket") {
-      dispatch(removeFromBasket(id));
-      setCount(count - 1);
+      if (count > 0) {
+        dispatch(removeFromBasket(id));
+        setCount(count - 1);
+      }
     }
   };
 
@@ -76,7 +78,11 @@ const DishRow = ({ id, name, description, price, image }) => {
                 handlePress("remove-from-basket");
               }}
             >
-              <MinusCircleIcon color={iconColor} size={40} />
+              <MinusCircleIcon
+                color={iconColor}
+                size={40}
+                opacity={count > 0 ? 1 : 0.3}
+              />
             </TouchableOpacity>
             <Text>{count}</Text>
             <TouchableOpacity
@@ -89,7 +95,6 @@ const DishRow = ({ id, name, description, price, image }) => {
           </View>
         </View>
       )}
-      <Text>{items.length}</Text>
     </>
   );
 };

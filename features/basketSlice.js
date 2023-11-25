@@ -11,8 +11,18 @@ export const basketSlice = createSlice({
     addToBasket: (state, action) => {
       state.items = [...state.items, action.payload];
     },
-    removeFromBasket: (state) => {
-      state.value -= 1;
+    removeFromBasket: (state, action) => {
+      const index = state.items.findIndex(
+        (item) => item.id === action.payload.id
+      );
+
+      let newBasket = [...state.items];
+
+      if (index >= 0) {
+        newBasket.splice(index, 1);
+      }
+
+      state.items = newBasket;
     },
   },
 });
@@ -21,5 +31,8 @@ export const basketSlice = createSlice({
 export const { addToBasket, removeFromBasket } = basketSlice.actions;
 
 export const selectBasketitems = (state) => state.basket.items;
+
+export const selectBasketTotal = (state) =>
+  state.basket.items.reduce((total, item) => (total += item.price), 0);
 
 export default basketSlice.reducer;
