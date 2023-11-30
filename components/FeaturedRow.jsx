@@ -29,8 +29,8 @@ const FeaturedRow = ({ title, description, id }) => {
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
           dishes={dishes}
-          long={20}
-          lat={0}
+          lat={21.170748137305438}
+          long={72.7888514415796}
         />
         <RestaurantCard
           id={123}
@@ -41,8 +41,8 @@ const FeaturedRow = ({ title, description, id }) => {
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
           dishes={dishes}
-          long={20}
-          lat={0}
+          lat={21.170748137305438}
+          long={72.7888514415796}
         />
         <RestaurantCard
           id={123}
@@ -53,8 +53,8 @@ const FeaturedRow = ({ title, description, id }) => {
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
           dishes={dishes}
-          long={20}
-          lat={0}
+          lat={21.170748137305438}
+          long={72.7888514415796}
         />
         <RestaurantCard
           id={123}
@@ -65,8 +65,8 @@ const FeaturedRow = ({ title, description, id }) => {
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
           dishes={dishes}
-          long={20}
-          lat={0}
+          lat={21.170748137305438}
+          long={72.7888514415796}
         />
         <RestaurantCard
           id={123}
@@ -77,8 +77,8 @@ const FeaturedRow = ({ title, description, id }) => {
           address="Opposite SVNIT, Icchhanath-Dumas Road, Surat - 395007"
           short_description="Authentic North Indian food, only Veg. (Jain also available)"
           dishes={dishes}
-          long={20}
-          lat={0}
+          lat={21.170748137305438}
+          long={72.7888514415796}
         />
       </ScrollView>
     </View>
