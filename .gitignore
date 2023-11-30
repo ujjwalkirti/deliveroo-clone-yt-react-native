@@ -37,3 +37,6 @@ yarn-error.*
 #ide
 .vs
 .idea
+
+#environment variables
+.env
